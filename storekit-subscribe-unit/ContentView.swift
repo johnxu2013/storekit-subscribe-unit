@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var storeVM = StoreViewModel()
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if storeVM.purchasedSubscriptions.isEmpty {
+                SubscriptionView()
+            } else {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Premium App")
+            }
         }
         .padding()
+        .environment(storeVM)
     }
 }
 

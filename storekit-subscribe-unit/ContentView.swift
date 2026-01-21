@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if storeVM.purchasedSubscriptions.isEmpty {
-                SubscriptionView()
+                SubscriptionView2()
             } else {
                 Image(systemName: "globe")
                     .imageScale(.large)

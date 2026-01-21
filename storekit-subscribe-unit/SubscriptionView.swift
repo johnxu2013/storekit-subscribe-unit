@@ -33,8 +33,8 @@ struct SubscriptionView: View {
                         {
                             VStack {
                                 HStack {
-                                    Text(product.displayPrice)
                                     Text(product.displayName)
+                                    Text(product.displayPrice)
                                 }
                                 Text(product.description)
                             }.padding()

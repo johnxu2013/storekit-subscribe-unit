@@ -89,10 +89,6 @@ struct SubscriptionView2: View {
                         
                         // Footer
                         VStack(spacing: 4) {
-                            Text("Thank you for your support!")
-                                .font(.caption)
-                                .foregroundStyle(.white)
-                                .opacity(0.6)
                             
                             Text("Auto-renewable. Cancel anytime.")
                                 .font(.caption2)
